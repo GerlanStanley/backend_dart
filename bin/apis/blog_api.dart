@@ -16,12 +16,12 @@ class BlogApi {
       return Response.ok('Choveu hoje');
     });
 
-    router.post('blog/noticias', (Request req) {
+    router.post('/blog/noticias', (Request req) {
       //_service.save('');
       return Response.ok('Choveu hoje');
     });
 
-    router.put('blog/noticias', (Request req) {
+    router.put('/blog/noticias', (Request req) {
       String? id = req.url.queryParameters['id'];
 
       //_service.save('');
@@ -29,7 +29,7 @@ class BlogApi {
       return Response.ok('Choveu hoje');
     });
 
-    router.delete('blog/noticias', (Request req) {
+    router.delete('/blog/noticias', (Request req) {
       String? id = req.url.queryParameters['id'];
 
       //_service.delete(1);

@@ -7,9 +7,6 @@ class CustomServer {
     required String address,
     required int port,
   }) async {
-    String address = 'localhost';
-    int port = 8080;
-
     await shelf_io.serve(handler, address, port);
     print('Servidor inicializado -> http://$address:$port');
   }
